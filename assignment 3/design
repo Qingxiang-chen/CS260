@@ -1,0 +1,6 @@
+design for Linked Queue
+
+      set a linkqueue ->  enter node : first I set one initial queue, then add node by set one as value in the queue 
+            delete node : set p as node ,  p will be first which is q' front then set q'front = next (which is q'front = q' front =q' next )
+            
+      show the queue 

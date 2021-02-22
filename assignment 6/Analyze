@@ -1,1 +1,6 @@
+normal tree (not in order) : node in the childern tree are not in order from left to right, node can be switch
+binary tree (in order whatevry per post in-order): node in the childern tree are  in order from left to right, node can not be switch
 
+   binary tree (in order) will be more efficient than normal tree(not in order) when you insert
+       when you insert in normal tree(not in order), it will cost more time and more complixty beacuse it need visit every node when you got lot of node,
+       for the binary tree (in order), it save time by split it in half and visit from root to down because it in order and dont need visit every node

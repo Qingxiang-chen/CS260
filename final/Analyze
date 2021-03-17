@@ -1,1 +1,2 @@
-
+Dijkstra: O((E+V)logv)
+Prims: O（E + V）* O（LogV）

@@ -1,0 +1,7 @@
+list data structure that allows us to add (insert) or remove (delete) values at a given location in the list (instead of the top of a stack or the front or back of a queue):
+
+        head  ->   node 1  ->   node 4  ->  node 5  ,     we need add node 2 between node 1 and node 4 : 
+              first we need find node 1, 
+               and let node 1 and node 2 piont to node  4 
+               node 1 point to node 2 
+               then we get node 2 location 

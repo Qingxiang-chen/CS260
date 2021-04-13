@@ -1,0 +1,6 @@
+First set the make 
+      capacity of the package （max size）
+      
+then compare capacity and number of marber, if capacity is biger then full, or it can add more, so the temporarily marber ( if add more) repalce capacity.   
+
+and use rand to remove marber from bag,

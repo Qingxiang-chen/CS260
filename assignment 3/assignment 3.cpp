@@ -8,12 +8,11 @@ public:
 class Linkqueue {
 public:
     void InitQueue(Linkqueue &Q);
-    void IsEmpty(Linkqueue &Q);
     void EnQueue(Linkqueue &Q);
     void DeQueue(Linkqueue &Q);
     void showqueue(Linkqueue &Q);
     void findQueue(Linkqueue &Q, int value);
-    void destroyQueue(Linkqueue &Q);
+
 
 private:
     QNode *front;
@@ -26,15 +25,7 @@ void Linkqueue::InitQueue(Linkqueue &Q) {
     Q.front = p;
     Q.rear = p;
 }
-// if this link empty or not
-void Linkqueue::IsEmpty(Linkqueue &Q) {
-    if (Q.rear == Q.front) {
-        cout << "this list is empty";
-    }
-    else
-        cout << "this is not empty";
-    cout << endl;
-}
+
 //input node
 void Linkqueue::EnQueue(Linkqueue &Q) {
     QNode *pnew = new QNode;
@@ -86,15 +77,7 @@ void Linkqueue::findQueue(Linkqueue &Q, int value) {
     cout << endl;
 }
 
-//destroyqueue
-void Linkqueue::destroyQueue(Linkqueue &Q) {
-    while (Q.front)
-    {
-        Q.rear = Q.front->qnext;
-        delete Q.front;
-        Q.front = Q.rear;
-    }
-}
+
 int main() {
     Linkqueue queue;
     Linkqueue *Q;
@@ -113,7 +96,7 @@ int main() {
     queue.showqueue(*Q);
     queue.findQueue(*Q, 1);
     queue.IsEmpty(*Q);
-    queue.destroyQueue(*Q);
+  
    
     return 0;
 }

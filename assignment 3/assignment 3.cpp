@@ -95,8 +95,7 @@ int main() {
     queue.DeQueue(*Q);
     queue.showqueue(*Q);
     queue.findQueue(*Q, 1);
-    queue.IsEmpty(*Q);
-  
+
    
     return 0;
 }
